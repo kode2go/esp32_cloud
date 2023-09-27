@@ -1,8 +1,8 @@
 /*
-  Connect ESP32 to AskSensors
- * Description:  This sketch connects to a website (https://asksensors.com) using an ESP32 Wifi module.
- *  Author: https://asksensors.com, 2018
- *  github: https://github.com/asksensors
+  Connect ESP32 to Cloud
+ * Description:  This sketch connects to a flask cloud sending power data
+ *  Author: kode2go
+ *  github: kode2go
  */
  
 #include <WiFi.h>
@@ -20,11 +20,9 @@ const char* ssid     = "xx"; //Wifi SSID
 const char* password = "xx"; //Wifi Password
 
 const char* serverUrl = "http://34.29.140.126/flask/rec";
+const char* code_version = "esp_32_flask_api_serial_01.1.py";
 
-// ASKSENSORS API host config
-//const char* host = "api.asksensors.com";  // API host name
-//const int httpPort = 80;      // port
-  
+
 void setup(){
 
   adc1_config_channel_atten(ADC1_CHANNEL_6, ADC_ATTEN_DB_11);
@@ -34,7 +32,9 @@ void setup(){
   // open serial
   Serial.begin(115200);
   Serial.println("*****************************************************");
-  Serial.println("********** Program Start : Connect ESP32 to AskSensors.");
+  Serial.println("Code version:");
+  Serial.println(code_version);
+  Serial.println("********** Program Start : Connect ESP32 to WiFi.");
   Serial.println("Wait for WiFi... ");
 
   // connecting to the WiFi network
