@@ -1,16 +1,17 @@
-# Setup of Nginx
+# Setup
 
-https://github.com/kode2go/nginx_webserver
+1. Esp32
+2. VM
+3. Flask
+4. Nginx
 
-# Setup of esp32
+See wiki: https://github.com/kode2go/esp32_cloud/wiki
+
+# Original ESP32 work:
 
 https://github.com/kode2go/esp32_home_power_management/wiki
 
-Original Work:
-https://github.com/kode2go/esp32_home_power_management/tree/main
-
 # esp32_cloud_app_flow
-
 
 This Flask app has several routes and functions for handling and displaying data:
 
