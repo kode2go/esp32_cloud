@@ -1,5 +1,9 @@
 # Setup
 
+![image](https://github.com/kode2go/esp32_cloud/assets/29664888/54bb6784-1767-4463-8cf1-d1235ed73f3e)
+
+Reference: https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/
+
 1. Esp32
 2. VM
 3. Flask
